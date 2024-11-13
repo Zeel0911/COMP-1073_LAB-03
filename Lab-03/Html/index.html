@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Car Product</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ModelToyCars.com - Red Sports Car</h1>
+
+        <!-- Toy Car Info Section -->
+        <div class="toy-info">
+            <h2>Product Details:</h2>
+            <ul>
+                <li><strong>Model:</strong> <span id="carModel"></span></li>
+                <li><strong>Color:</strong> <span id="carColor"></span></li>
+                <li><strong>Speed:</strong> <span id="carSpeed"></span></li>
+                <li><strong>Price:</strong> <span id="carPrice"></span></li>
+                <li><strong>Year:</strong> <span id="carYear"></span></li>
+                <li><strong>Material:</strong> <span id="carMaterial"></span></li>
+            </ul>
+        </div>
+
+        <!-- Interaction Section -->
+        <div class="interaction">
+            <h3>Update Car Information:</h3>
+            <label for="newSpeed">Enter new speed:</label>
+            <input type="number" id="newSpeed">
+            <button onclick="updateSpeed()">Update Speed</button>
+        </div>
+        
+        <div class="car-image">
+            <img src="../img/car1.jpg" alt="Red Sports Car" id="carImage">
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
