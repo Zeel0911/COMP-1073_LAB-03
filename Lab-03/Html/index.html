@@ -3,36 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toy Car Product</title>
+    <title>Racing Hot Wheels</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>ModelToyCars.com - Red Sports Car</h1>
+        <h1>RacingHotWheels.com - Red Sports Car</h1>
 
         <!-- Toy Car Info Section -->
         <div class="toy-info">
             <h2>Product Details:</h2>
-            <ul>
-                <li><strong>Model:</strong> <span id="carModel"></span></li>
-                <li><strong>Color:</strong> <span id="carColor"></span></li>
-                <li><strong>Speed:</strong> <span id="carSpeed"></span></li>
-                <li><strong>Price:</strong> <span id="carPrice"></span></li>
-                <li><strong>Year:</strong> <span id="carYear"></span></li>
-                <li><strong>Material:</strong> <span id="carMaterial"></span></li>
-            </ul>
+            <div class="car-specs">
+                <ul>
+                    <li><strong>Model:</strong> <span id="carModel">Red Racer</span></li>
+                    <li><strong>Color:</strong> <span id="carColor">Bright Red</span></li>
+                    <li><strong>Speed:</strong> <span id="carSpeed">120 mph</span></li>
+                    <li><strong>Price:</strong> <span id="carPrice">$50.00</span></li>
+                    <li><strong>Year:</strong> <span id="carYear">2024</span></li>
+                    <li><strong>Material:</strong> <span id="carMaterial">Durable Plastic</span></li>
+                </ul>
+            </div>
+            <div class="highlight">
+                <p><strong>Fun Fact:</strong> This toy car comes with a turbo boost that can take it from 0 to 60 in just a few seconds!</p>
+            </div>
         </div>
 
-        <!-- Interaction Section -->
+        <!-- Interactive Section -->
         <div class="interaction">
             <h3>Update Car Information:</h3>
             <label for="newSpeed">Enter new speed:</label>
-            <input type="number" id="newSpeed">
+            <input type="number" id="newSpeed" placeholder="Speed (mph)">
             <button onclick="updateSpeed()">Update Speed</button>
         </div>
-        
+
+        <!-- 3D Car Model Section -->
         <div class="car-image">
-            <img src="../img/car1.jpg" alt="Red Sports Car" id="carImage">
+            <img src="../img/car1.jpg" alt="Red Sports Car" id="carImage" class="car-rotate">
         </div>
     </div>
 
