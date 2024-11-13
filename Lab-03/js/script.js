@@ -1,4 +1,4 @@
-// Toy Car Constructor
+// Object constructor for the Toy Car
 function ToyCar(model, color, speed, price, year, material) {
     this.model = model;
     this.color = color;
@@ -8,27 +8,22 @@ function ToyCar(model, color, speed, price, year, material) {
     this.material = material;
 }
 
-// Create an instance of the Red Sports Car
-const redSportsCar = new ToyCar("Red Sports Car", "Red", "120 mph", "$29.99", "2024", "Plastic");
+// Creating a toy car instance
+let redSportsCar = new ToyCar("Red Racer", "Bright Red", "120 mph", "$50.00", "2024", "Durable Plastic");
 
-// Display the initial car details
-function displayCarInfo() {
-    document.getElementById("carModel").innerText = redSportsCar.model;
-    document.getElementById("carColor").innerText = redSportsCar.color;
-    document.getElementById("carSpeed").innerText = redSportsCar.speed;
-    document.getElementById("carPrice").innerText = redSportsCar.price;
-    document.getElementById("carYear").innerText = redSportsCar.year;
-    document.getElementById("carMaterial").innerText = redSportsCar.material;
-}
-
-// Update car speed when the button is clicked
+// Function to update the speed of the car dynamically
 function updateSpeed() {
-    const newSpeed = document.getElementById("newSpeed").value;
+    const newSpeed = document.getElementById('newSpeed').value;
     if (newSpeed) {
         redSportsCar.speed = newSpeed + " mph";
-        displayCarInfo();
+        document.getElementById('carSpeed').textContent = redSportsCar.speed;
     }
 }
 
-// Initialize the car information on page load
-displayCarInfo();
+// Populate the car details on page load
+document.getElementById('carModel').textContent = redSportsCar.model;
+document.getElementById('carColor').textContent = redSportsCar.color;
+document.getElementById('carSpeed').textContent = redSportsCar.speed;
+document.getElementById('carPrice').textContent = redSportsCar.price;
+document.getElementById('carYear').textContent = redSportsCar.year;
+document.getElementById('carMaterial').textContent = redSportsCar.material;
